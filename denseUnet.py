@@ -7,8 +7,6 @@ Licensed under the MIT License.
 import torch
 from torch import nn
 from torch.nn import functional as F
-from model.baselines.loupe.transforms import *
-# from model.baselines.loupe.layers import *
 
 class DenseBlock(nn.Module):
     """
@@ -135,7 +133,6 @@ class LOUPEUNet(nn.Module):
                  chans,
                  num_pool_layers,
                  drop_prob,
-#                  mask_length,
                  bi_dir=False,
                  old_recon=False,
                  with_uncertainty=False,
